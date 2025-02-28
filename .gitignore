@@ -1,0 +1,14 @@
+# VS CODE
+.vscode/
+# LATEX
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+.DS_Store
+*.blg
+*.bbl
+*.bcf
+*.run.xml
+*.toc
