@@ -28,7 +28,6 @@
 \usepackage{array,ragged2e}
 \newcolumntype{P}[1]{>{\RaggedRight\arraybackslash}p{#1}}
 \titleformat{\section}{\large\bfseries}{\thesection}{1em}{}
-
 \hfuzz=0.64pt % Allow hbox to overflow slightly
 
 \begin{document}
@@ -59,17 +58,72 @@
     \smallskip
     \hrule
 \end{titlepage}
-
-{\tableofcontents} 
+\frenchspacing
 \pagebreak
 \section*{Introduction and Outline of Project}
-\subsection*{The Basics of botnets}
-
+\subsection*{The Basics of Botnets}
+A botnet (the combination of the words robot and network) is a group of network 
+enabled malware infected. Bots, the infected devices, 
+are controlled by a central server or servers, 
+often called the “bot-herder” or the “command and control server”. 
 \subsection*{Outline of Project}
-
+Here is what we would tentatively like to cover in each section of our paper:
+\begin{enumerate}[\bf (a.)]
+    \item Introduction
+    \begin{enumerate}[(a.)]
+        \item What are botnets?
+        \item Examples of botnets
+        \item Famous cases of botnet attacks
+    \end{enumerate}
+    \item Taxonomy of Botnets
+    \begin{enumerate}[\bf (a.)]
+        \item Architecture / Design
+        \item Communication Methods
+        \item Purpose
+    \end{enumerate}
+    \item Attack Vectors
+    \begin{enumerate}[(a.)]
+        \item Vulnerabilities
+        \item Phishing
+        \item Worm-Like
+        \item External Devices
+    \end{enumerate}
+    \item Mitigation Techniques
+    \begin{enumerate}[(a.)]
+        \item Firewalls
+        \item Intrusion Detection Systems (IDS)
+        \item Challenge and Response Tests
+    \end{enumerate}
+    \item Experimentation
+    \begin{enumerate}
+        \item Existing botnet frameworks
+        \item Developing a basic botnets
+        \item Implementing mitigation techniques (if time permits)
+    \end{enumerate}
+\end{enumerate}
+\subsection*{Taxonomy of Botnets}
+Botnets can be constructed in a number of 
+ways and fulfill many different purposes for an attacker. 
+They can either be centralized, using a client-server model, or decentralized, 
+using a peer-to-peer model. 
+\subsection*{Attack Vectors}
+Botnets exploit various attack vectors to infect devices 
+and expand their network. The most common methods that botnets 
+use are exploiting vulnerabilities, phishing, worm-like propagation, 
+and using external devices. Botnets exploit vulnerabilities such as 
+unpatched software, misconfigurations, and security loopholes 
+found within operating systems, applications, or IoT devices. 
+\subsection*{Mitigation Techniques}
+There any a myriad of different techniques that try to mitigate the damage
+caused by botnets, or limit their spread altogether. We would like to focus
+on a few different techniques: firewalls, intrusion detection systems, and
+challenge response tests. 
 \subsection*{Experimentation}
-
-\subsection*{Conclusion}
-
-
+We first plan to look into existing 
+botnet frameworks to examine their methods and features. 
+After research into frameworks, we plan to build a simulated botnet, 
+with various bot devices running in containers. 
+Using a modularized approach we can change the purpose of the botnet 
+dynamically to explore the differences. We plan to compare botnet 
+communication and architecture methods by running a set of tasks for the 
 \end{document}
