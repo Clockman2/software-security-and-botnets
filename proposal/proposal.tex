@@ -22,6 +22,8 @@
 \usepackage{varwidth}
 \usepackage{multirow}
 \usepackage{booktabs}
+\usepackage[style=numeric]{biblatex} % using biblatex, using apa format!
+\addbibresource{sources.bib}
 \usepackage[svgnames,table]{xcolor}
 \usepackage[tableposition=above]{caption}
 \usepackage{pifont}
@@ -60,13 +62,17 @@
 \end{titlepage}
 \frenchspacing
 \pagebreak
-\section*{Introduction and Outline of Project}
+\section*{Purpose and Outline of Project}
 A botnet (the combination of the words robot and network) is a group of network
 enabled malware infected. Bots, the infected devices, are controlled by a central
-server or servers, often called the “bot-herder” or the “command and control server”.
-A botnet can be used for a wide variety of malicious activities. From DDoS to data
+server or servers, often called the “bot-herder” or the “command and control server”
+\cite{Heron:2007}.
+A botnet can be used for a wide variety of malicious activities. From DDoS attacks to data
 theft, botnets can interfere with computer information systems in a variety of ways
-and are worthy of studying and considering mitigation techniques.
+and are worthy of studying and considering mitigation techniques. Our paper will focus
+on discussing the threats botnets pose, the mitigation techniques currently implemented,
+and later we will implement a basic botnet to demonstrate attacks and mitigation
+techniques.
 \subsection*{Outline of Project}
 Here is what we would tentatively like to cover in each section of our paper:
 \begin{enumerate}[\bf (a.)]
@@ -117,9 +123,9 @@ found within operating systems, applications, or IoT devices.
 \subsection*{Mitigation Techniques}
 There any a myriad of different techniques that try to mitigate the damage
 caused by botnets, or limit their spread altogether. We would like to focus
-on a few different techniques: firewalls, intrusion detection systems, and
-challenge response tests. 
-\subsection*{Experimentation}
+on a few different techniques: firewalls, intrusion detection systems \cite{Stefan:2000}, and
+challenge response tests.
+\subsection*{Experimentation and Results}
 We first plan to look into existing 
 botnet frameworks to examine their methods and features. 
 After research into frameworks, we plan to build a simulated botnet, 
@@ -135,4 +141,5 @@ We will attempt to approach the subject both from a research-based approach,
 creating an overview of botnets as they relate to computer security,
 and from an experimental approach by attempting to implement a basic version of
 a botnet.
+\printbibliography
 \end{document}
